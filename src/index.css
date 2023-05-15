@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Raleway", "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+#signup-button {
+  background: linear-gradient(
+    270deg,
+    rgba(0, 72, 255, 1) 0%,
+    rgba(0, 150, 255, 1) 100%
+  );
+  border-radius: 52px;
+  padding: 10px 42px 10px 42px;
+  color: white;
+  text-transform: capitalize;
+}
+
+.main-section {
+  background-image: url(./assets//Background.jpg);
+  width: 1920px;
+  height: 100vh;
+  position: relative;
+}
+
+/* //subscription type */
+.subscription-notification:after {
+  content: "Recommended";
+  background-color: #47ba68;
+  position: absolute;
+  width: 121px;
+  height: 16px;
+  left: 0px;
+  top: -22px;
+  border-radius: 0px 0px 4px 4px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 120%;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+
+.subscription-notification-expired:after {
+  content: "Offer expired";
+  background-color: #f77171;
+  position: absolute;
+  width: 121px;
+  height: 16px;
+  left: 0px;
+  top: -22px;
+  border-radius: 0px 0px 4px 4px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 120%;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+
+.alert-gradient {
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to right, #de4313, #fec163) border-box;
+  border-radius: 8px;
+  border: 2px solid transparent;
+}
+
+.alert-fill {
+  background: linear-gradient(
+    135deg,
+    rgba(222, 67, 19, 0.2) 0%,
+    rgba(222, 67, 19, 0.2) 0.75%,
+    rgba(222, 67, 19, 0.2) 2.92%,
+    rgba(222, 68, 20, 0.2) 6.37%,
+    rgba(223, 69, 21, 0.2) 10.97%,
+    rgba(223, 72, 22, 0.2) 16.59%,
+    rgba(224, 75, 24, 0.2) 23.1%,
+    rgba(225, 80, 27, 0.2) 30.37%,
+    rgba(227, 86, 31, 0.2) 38.27%,
+    rgba(229, 94, 36, 0.2) 46.66%,
+    rgba(231, 104, 43, 0.2) 55.41%,
+    rgba(235, 117, 51, 0.2) 64.39%,
+    rgba(238, 132, 60, 0.2) 73.47%,
+    rgba(243, 149, 71, 0.2) 82.52%,
+    rgba(248, 169, 84, 0.2) 91.41%,
+    rgba(254, 193, 99, 0.2) 100%
+  );
+  border-radius: 8px;
+}
+
+/* // style to change active radio button */
+input[type="radio"] {
+  appearance: none;
+  border: 2px solid #bebebe;
+  width: 2.3rem;
+  height: 2rem;
+  border-radius: 15em;
+  content: none;
+  outline: none;
+  margin: 0;
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+}
+
+input[type="radio"]:checked {
+  appearance: none;
+  outline: none;
+  padding: 0;
+  content: "\00A0\2713\00A0" !important;
+  border: none;
+}
+
+input[type="radio"]:checked::before {
+  position: absolute;
+  background-color: #47ba68;
+  color: white !important;
+  content: "\00A0\2713\00A0" !important;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 10em;
+  font-weight: bolder;
+  font-size: 21px;
+  text-align: center;
+}
