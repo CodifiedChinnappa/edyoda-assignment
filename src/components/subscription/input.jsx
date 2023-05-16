@@ -10,9 +10,9 @@ const Input = ({ data, totalSum }) => {
         !status === true
           ? "bg-[#E7E7E7]  text-[#BEBEBE]"
           : inputRef?.current?.checked
-          ? "bg-[#D7EDDD]"
-          : null
-      }  border-2 border-[#47BA68] rounded-[4px] self-stretch order-1 `}
+          ? "bg-[#D7EDDD] border-[#47BA68]"
+          : "border-[#E7E7E7]"
+      }  border-2 rounded-[4px] self-stretch order-1 `}
     >
       <input
         className="w-[2.5rem] h-[2.5rem] "
